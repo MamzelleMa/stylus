@@ -1,0 +1,6 @@
+- name: Bill Gates
+  image_file: bill.jpeg
+  content: Best invention since computer
+- name: Paul Graham
+  image_file: paul.jpg
+  content: Big hit of the year
