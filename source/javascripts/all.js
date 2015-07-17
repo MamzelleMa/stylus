@@ -6,10 +6,17 @@ $(document).ready(function(){
 
 	$(window).on("scroll",function(){
 		if ( $(this).scrollTop() > 80 ){
-			$(".navbar").css("background-color","black")
-		} else {
-			$(".navbar").css("background-color","transparent")
-		}
+			$(".navbar").css({
+        "background": "rgba(0, 0, 0, 0.7)",
+        "box-shadow": "0 0 2px black"
+      });
+    }
+    else {
+      $(".navbar").css({
+        "background": "transparent",
+        "box-shadow": "0 0 0px transparent"
+      });
+    }
 	});
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
@@ -25,5 +32,5 @@ $(document).ready(function(){
 	    }
 	  });
 	});
-	
+
 });
